@@ -7,13 +7,29 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, a{
     text-decoration: none;
 }
 
+body {
+    background-image: url("./player.png");
+    background-size: 25px;
+    position: 0px ;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 6rem;
+    color: #fff;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F, 0 0 0.2em #87F
+}
+
 #maze {
     width: 100%;
-    height: 100vh;
+    height: 700px;
     max-width: 1080px;
     min-width: 300px;
-    background-color: aqua;
-    margin: 0 auto;
+    margin: 70px auto 0px;
 }
 
 .container {
@@ -27,26 +43,93 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, a{
     width: 100%;
 }
 
-.mazeWall {
+#mazeWall {
     width: 40px;
     height: 40px;
-    background-color: red;
+    background-color: rgb(42, 20, 241);
 }
 
-.mazePath {
+#mazePath {
     width: 40px;
     height: 40px;
-    background-color: blue;
 }
 
-.startGame {
+#startGame {
     width: 40px;
     height: 40px;
-    background-color: white;
+    background-color: rgb(251, 255, 0);
 }
 
-.finishGame {
+#finishGame {
     width: 40px;
     height: 40px;
-    background-color: white;
+    background-color: rgb(251, 255, 0);
 }
+
+#player {
+    background-color: black;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px; 
+    margin: 7px auto;
+}   
+
+.containerModal {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.548);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+  }
+  
+  .modal {
+    background-color: rgba(117, 10, 10, 0.63);
+    width: 600px;
+    height: 300px;
+    color: #fff;
+    border: solid 2px aliceblue;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    padding: 5px;
+  }
+  
+  #textResult {
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: monospace;
+    line-height: 1.8rem;
+    font-weight: bold;
+  }
+  
+  #reset {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    line-height: 1.4rem;
+    color: whitesmoke;
+    border: none;
+    box-shadow: black;
+    border-radius: 25px;
+    background-color: rgba(98, 205, 231, 0.719);
+  }
+  
+  #reset:hover {
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
