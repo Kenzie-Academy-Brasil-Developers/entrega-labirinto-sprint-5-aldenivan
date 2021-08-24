@@ -176,7 +176,7 @@ function checkWin(nextBrother) {
 
 const showResult = () => {
 
-    textModal.innerHTML = "GOD!!! VocÊ conseguir sai do labirinto"
+    textModal.innerHTML = "GOD!!! Você conseguiu sair do labirinto"
 
     resultModal.classList.remove("hidden");
 }
